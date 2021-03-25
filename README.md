@@ -2,7 +2,7 @@
 
 ## This program was developed during the code.design hackathon
 
-It is designed use and display data of a rocket, that is connected over Bluetooth.
+It is designed to use and display data of a rocket, that is connected over Bluetooth.
 ### Technologies:
 
 | Name          | Purpose
