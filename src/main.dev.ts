@@ -76,6 +76,7 @@ const createWindow = async () => {
     },
   });
 
+  mainWindow.removeMenu()
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 
   mainWindow.webContents.on('did-finish-load', () => {
