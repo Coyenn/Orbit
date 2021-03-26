@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu } from 'antd';
 import { SettingOutlined, HomeOutlined } from '@ant-design/icons';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const { SubMenu } = Menu;
 
@@ -22,7 +22,6 @@ const Sidebar = () => (
           <Menu.Item key="2">
             <Link to="/settings">Settings</Link>
           </Menu.Item>
-          <Menu.Item key="3">Bluetooth</Menu.Item>
       </SubMenu>
 
   </Menu>

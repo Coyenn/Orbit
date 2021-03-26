@@ -14,9 +14,9 @@ import DeleteSourceMaps from '../scripts/DeleteSourceMaps';
 CheckNodeEnv('production');
 DeleteSourceMaps();
 
-const devtoolsConfig = process.env.DEBUG_PROD === 'true' ? {
+const devtoolsConfig = {
   devtool: 'source-map'
-} : {};
+};
 
 export default merge(baseConfig, {
   ...devtoolsConfig,
