@@ -16,14 +16,14 @@
 
 Orbit is designed to use and display flight data of a rocket. It is an Electron Application written in TypeScript and the React Framework.
 
-### Getting Started
+### Quick Start
 ---
-To start you need:
+Prerequisites:
 - git
 - nodejs
 - yarn
 
-Quick Start:
+Setup:
 
 To quickly setup the project, run the following commands in a command prompt.
 
@@ -34,6 +34,9 @@ $ yarn install
 $ yarn start
 ```
 ### Technologies:
+---
+
+Orbit is utilizing the following technologies
 
 | Name          | Purpose
 | ------------- |-------------
