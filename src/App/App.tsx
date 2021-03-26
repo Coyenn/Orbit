@@ -13,7 +13,7 @@ const { Header, Content, Sider } = Layout;
 export default function App() {
   return (
     <>
-    <Router>
+      <Router>
         <Layout style={{
           padding: 0,
           margin: 0,
@@ -33,11 +33,10 @@ export default function App() {
                 margin: 0,
                 minHeight: "100%",
               }}>
-
-                  <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/settings" component={Settings} />
-                  </Switch>
+                <Switch>
+                  <Route exact path="/" component={Home} />
+                  <Route exact path="/settings" component={Settings} />
+                </Switch>
               </Content>
             </Layout>
           </Layout>
