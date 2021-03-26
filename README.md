@@ -1,4 +1,8 @@
-![alt text](https://i.ibb.co/TcQyG4L/Banner.png "Logo Title Text 1")
+<p align="center">
+  <img src="https://i.ibb.co/TcQyG4L/Banner.png" />
+</p>
+
+![alt text](https://img.shields.io/github/license/Coyenn/Orbit?label=license "License") ![alt text](https://img.shields.io/github/workflow/status/Coyenn/Orbit/CI) ![alt text](https://img.shields.io/github/languages/code-size/Coyenn/Orbit)
 
 ## This program was developed during the code.design hackathon
 
