@@ -74,13 +74,13 @@ const createWindow = async () => {
     icon: getAssetPath('icon.png'),
     webPreferences: {
       nodeIntegration: true,
-      devTools: true,
+      devTools: false,
     },
   });
 
   Store.initRenderer();
 
-  //mainWindow.removeMenu()
+  mainWindow.removeMenu()
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 
   mainWindow.webContents.on('did-finish-load', () => {
