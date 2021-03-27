@@ -1,4 +1,4 @@
-[
+var FlightData = [
   {
     "FuelData": [
       {
@@ -1408,3 +1408,5 @@
     ]
   }
 ]
+
+export default FlightData
