@@ -9,6 +9,9 @@ import Home from '../Sites/Home/Home';
 import Settings from '../Sites/Settings/Settings';
 import LoadingScreen from '../Components/LoadingScreen/LoadingScreen'
 
+const Store = require('electron-store');
+const SettingsStore = new Store();
+
 const { Header, Content, Sider } = Layout;
 
 export default function App() {

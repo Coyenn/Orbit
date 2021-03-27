@@ -1,36 +1,7 @@
 import React from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
-const data = [
-  {
-    name: '1 sec',
-    value: 9000,
-  },
-  {
-    name: '2 sec',
-    value: 8700,
-  },
-  {
-    name: '3 sec',
-    value: 8300,
-  },
-  {
-    name: '4 sec',
-    value: 8000,
-  },
-  {
-    name: '5 sec',
-    value: 7800,
-  },
-  {
-    name: '6 sec',
-    value: 7500,
-  },
-  {
-    name: '7 sec',
-    value: 7300,
-  },
-];
+import { GetData } from '../../../Data/DataManager';
 
 const FuelChart = () => (
     <>
@@ -38,7 +9,7 @@ const FuelChart = () => (
         <AreaChart
           width={500}
           height={400}
-          data={data}
+          data={GetData("FuelData")}
           margin={{
             top: 10,
             right: 30,
