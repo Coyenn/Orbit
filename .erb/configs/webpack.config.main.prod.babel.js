@@ -58,7 +58,7 @@
       */
      new webpack.EnvironmentPlugin({
        NODE_ENV: 'production',
-       DEBUG_PROD: true,
+       DEBUG_PROD: false,
        START_MINIMIZED: false,
      }),
    ],

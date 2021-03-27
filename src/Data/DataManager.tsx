@@ -9,7 +9,13 @@ const getKeyValue = <T extends object, U extends keyof T>(obj: T) => (key: U) =>
 export function GetData(DataIndex:any){
   const ChartItems = SettingsStore.get("Settings")
   const FlightDataIndex = getKeyValue(FlightData[0])(DataIndex)
-  const HowManyItemsToDisplay = ChartItems["Graph Data Resolution"]
+  var HowManyItemsToDisplay = 30
+
+  if("Graph Data Resolution" in ChartItems){
+    console.log("Graph Data Exists in Settings, so it will be assigned")
+    HowManyItemsToDisplay = ChartItems["Graph Data Resolution"]
+  }
+
   const SlicedData = FlightDataIndex.slice(Math.max(FlightDataIndex.length - HowManyItemsToDisplay, 0))
 
   return SlicedData;
