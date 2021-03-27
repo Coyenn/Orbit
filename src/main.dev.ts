@@ -14,6 +14,7 @@ import path from 'path';
 import { app, BrowserWindow, shell } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
+const Store = require('electron-store');
 
 export default class AppUpdater {
   constructor() {
@@ -73,9 +74,11 @@ const createWindow = async () => {
     icon: getAssetPath('icon.png'),
     webPreferences: {
       nodeIntegration: true,
-      devTools: false,
+      devTools: true,
     },
   });
+
+  Store.initRenderer();
 
   mainWindow.removeMenu()
   mainWindow.loadURL(`file://${__dirname}/index.html`);

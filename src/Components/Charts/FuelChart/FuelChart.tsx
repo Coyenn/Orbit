@@ -4,31 +4,31 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 const data = [
   {
     name: '1 sec',
-    Gramm: 9000,
+    value: 9000,
   },
   {
     name: '2 sec',
-    Gramm: 8700,
+    value: 8700,
   },
   {
     name: '3 sec',
-    Gramm: 8300,
+    value: 8300,
   },
   {
     name: '4 sec',
-    Gramm: 8000,
+    value: 8000,
   },
   {
     name: '5 sec',
-    Gramm: 7800,
+    value: 7800,
   },
   {
     name: '6 sec',
-    Gramm: 7500,
+    value: 7500,
   },
   {
     name: '7 sec',
-    Gramm: 7300,
+    value: 7300,
   },
 ];
 
@@ -50,7 +50,7 @@ const FuelChart = () => (
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Area type="monotone" dataKey="Gramm" stackId="1" stroke="#8884d8" fill="#8884d8" />
+          <Area type="monotone" dataKey="value" stackId="1" stroke="#8884d8" fill="#8884d8" />
         </AreaChart>
       </ResponsiveContainer>
     </>
