@@ -1,10 +1,10 @@
 import React from 'react';
-import icon from '../../../assets/icon.png';
+import Banner from '../../../assets/Banner.png';
 
 const Topbar = () => {
   return(
     <>
-      <img src={icon} alt="Logo" style={{
+      <img src={Banner} alt="Logo" style={{
         width: "100%",
         height: "50px",
         objectFit: "contain",
