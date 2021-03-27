@@ -1,7 +1,8 @@
 import React from 'react';
 import icon from '../../../assets/icon.png';
 
-const Topbar = () => (
+const Topbar = () => {
+  return(
     <>
       <img src={icon} alt="Logo" style={{
         width: "100%",
@@ -10,6 +11,7 @@ const Topbar = () => (
       }}
       />
     </>
-);
+  )
+};
 
 export default Topbar;

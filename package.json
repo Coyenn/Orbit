@@ -255,6 +255,7 @@
     "electron-updater": "^4.3.4",
     "history": "^5.0.0",
     "react": "^17.0.1",
+    "react-css-theme-switcher": "^0.2.2",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "recharts": "^2.0.9",
