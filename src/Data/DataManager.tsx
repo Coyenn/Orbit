@@ -11,7 +11,7 @@ export function GetData(DataIndex:any){
   const FlightDataIndex = getKeyValue(FlightData[0])(DataIndex)
   var HowManyItemsToDisplay = 30
 
-  if("Graph Data Resolution" in ChartItems){
+  if(ChartItems){
     console.log("Graph Data Exists in Settings, so it will be assigned")
     HowManyItemsToDisplay = ChartItems["Graph Data Resolution"]
   }
